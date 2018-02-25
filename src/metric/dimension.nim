@@ -17,7 +17,7 @@ type
       x: ptr Dim
       y: ptr BaseDimension
     y = x
-  ProductDimension*[X: static[auto]] = object of BaseDimension ## \
+  ProductDimension*[X: tuple] = object of BaseDimension ## \
     ## A type encoding a product of dimensions inside a static parameter.
     ## The designated type for ``X`` may be ``static[auto]``, but is actually
     ## a static tuple of arbitrary length. ``static[auto]`` seems to be the
