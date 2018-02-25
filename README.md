@@ -1,5 +1,7 @@
 # metric - bringing SI to Nim
 
+[![nimble](https://raw.githubusercontent.com/yglukhov/nimble-tag/master/nimble_js.png)](https://github.com/yglukhov/nimble-tag)
+
 `metric` is a small library providing type-level dimensional analysis.
 It allows you to keep track of the physical units of your programs, and can
 be useful for writing scientific software.
