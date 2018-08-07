@@ -43,7 +43,7 @@ proc expandTypeInstImpl(node: NimNode): NimNode =
       return expandTypeInstImpl(typ)
     else:
       let
-        impl = typeInst.symbol.getImpl
+        impl = typeInst.getImpl
       if impl.kind == nnkTypeDef:
         let
           body = impl[2]

@@ -47,7 +47,7 @@ suite "metric tests":
 
   test "pretty printing":
     check $Force == "kg m / s^2"
-    check $(meter * meter  / second^2 * ampere) == "1.0 [m^2 A / s^2]"
+    check $(meter * meter / second^2 * ampere) == "1.0 [m^2 A / s^2]"
     check toStringWithUnit(10.0 * meter / second,
                            milli(meter) / second,
                            "mm / s") == "10000.0 [mm / s]"
